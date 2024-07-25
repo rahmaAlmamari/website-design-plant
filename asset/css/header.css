@@ -1,0 +1,139 @@
+header {
+  position: relative;
+  width: 100%;
+}
+
+.left-detail {
+  position: absolute;
+  z-index: 4;
+  width: 400px;
+  height: 400px;
+  top: -55%;
+  left: 5%;
+}
+.t-frist {
+  font-family: sans-serif;
+  font-size: 60px;
+}
+.t-second {
+  font-family: fantasy;
+  font-size: 60px;
+}
+.t-thrid {
+  font-family: "Chunk Five", sans-serif;
+  font-size: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  background-color: #48ae26;
+  margin-right: 10px;
+}
+.left-detail p {
+  color: #96928f;
+  margin-top: 10px;
+}
+.left-detail .b-first {
+  background-color: #48ae26;
+  border-radius: 40%;
+  color: white;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  transform: scale(0);
+  animation: scaleIn 1.5s forwards 0.5s;
+  margin-top: 25px;
+}
+
+.left-detail .b-second {
+  background-color: black;
+  border-radius: 40%;
+  color: white;
+  padding: 7px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  transform: scale(0);
+  animation: scaleIn 1.5s forwards 0.5s;
+  margin-top: 25px;
+}
+
+/* Keyframes for the scale-in animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0); /* Start with scale 0 */
+  }
+  to {
+    transform: scale(1); /* End with scale 1 */
+  }
+}
+
+.left-detail .b-first:hover {
+  background-color: transparent;
+  border: 2px solid #48ae26;
+  color: #48ae26;
+}
+.left-detail .b-second:hover {
+  background-color: transparent;
+  border: 2px solid black;
+  color: black;
+}
+.img-plant {
+  position: absolute;
+  z-index: 1;
+  height: 680px;
+  width: 300px;
+  transform: rotate(-10deg);
+  right: 35%;
+  top: -120%;
+  background-image: url("../image/plant.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: -6px 2px 28px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -6px 2px 28px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: -6px 2px 28px -8px rgba(0, 0, 0, 0.75);
+  padding: 5px;
+}
+.one {
+  position: absolute;
+  z-index: 2;
+  height: 350px;
+  width: 200px;
+  top: 25%;
+  right: 26%;
+  transform: rotate(-130deg);
+}
+.two {
+  position: absolute;
+  z-index: 3;
+  height: 350px;
+  width: 200px;
+  top: -148%;
+  right: 53%;
+  transform: rotate(50deg);
+}
+.right-detail{
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  height: 400px;
+  top: -55%;
+  right: 5%;
+  padding-top: 30px;
+}
+.right-detail img{
+  width: 150px;
+  height: 150px;
+  transform: rotate(-10deg);
+
+}
+.right-detail p{
+  color: #75706D;
+  margin-top: 10px;
+}
